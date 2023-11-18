@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="name">Enter your namne : </label>
+        <input type="text" id="name" name="">
+        <p id="na">name should contains alphabets and the length should not be less than 8 characters</p>
+        <label for="pass">Enter your preferred password : </label>
+        <input type="password" id="na" name="">
+        <p id="pv">pssword should not be less than 8 characters.</p>
+        <label for="em">Enter your email address : </label>
+        <input type="email" id="em" name="">
+        <p id="ema">Should not contain any invalid nad follow name @domain.com</p>
+        <label for="pn">Enter your phone number</label>
+        <input type="number" id="pn" name="">
+        <p id="pho">phone number should contain 10 digits only</p>
+        <input type="button" id="btn" value="SUBMIT">
+    </form>
+    <script>
+        let button = (document.getElementById('btn').value);
+        let name = (document.querySelector('#name').value);
+        let pass = (document.querySelector('#pass').value);
+        let em = (document.querySelector('#em').value);
+        let pn = (document.querySelector('#pn').value);
+        document.getElementById.na.style = 'hidden'
+        document.getElementById.pv.style = 'hidden'
+        document.getElementById.ema.style = 'hidden'
+        document.getElementById.pho.style = 'hidden'
+        function validateform(){
+            if(name == "" && pass == "" && em == "" && pn == "" )
+            alert("form not valid ");
+        return false;
+       else{
+            document.getElementById.na.style = 'vissible'
+            document.getElementById.pv.style = 'vissible'
+            document.getElementById.ema.style = 'vissible'
+            document.getElementById.pho.style = 'vissible'
+            return 0;
+        }
+        }
+
+    </script>
+</body>
+</html>
